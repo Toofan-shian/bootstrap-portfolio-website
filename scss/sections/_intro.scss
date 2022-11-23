@@ -1,0 +1,46 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.intro-section {
+  @include gradiant;
+  height: 100%;
+  width: 100%;
+  padding: 10rem 0 0 0;
+}
+
+.intros {
+
+  .video-box {
+    position: relative;
+
+    a {
+      @include absoluteCenter;
+
+      span {
+
+        i {
+          font-size: 6rem;
+          color: $secondary;
+        }
+      }
+    }
+  }
+}
+
+.animation-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 6rem;
+  width: 6rem;
+  border-radius: 50%;
+  border: 0.5rem solid $gray-200;
+  animation: borderPulse 1.5s linear infinite;
+
+  &--1 {
+    animation-delay: 1s;
+  }
+  &--2 {
+    animation-delay: 1.5s;
+  }
+}
