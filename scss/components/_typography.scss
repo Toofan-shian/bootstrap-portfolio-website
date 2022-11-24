@@ -11,8 +11,13 @@
   }
   &--description {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1rem;
     padding-top: 1.2rem;
     text-transform: none;
+
+    @include media-breakpoint-up(lg) {
+      font-size: 1.4rem;
+      display: inline-block
+    }
   }
 }
