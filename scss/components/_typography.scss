@@ -21,3 +21,21 @@
     }
   }
 }
+
+.heading-line::before {
+  content: '';
+  width: 10rem;
+  height: 0.1rem;
+  background: $primary;
+  display: block;
+  margin: 0 auto;
+}
+.heading-line::after {
+  content: '';
+  width: 2rem;
+  height: 0.3rem;
+  background: $primary;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}
